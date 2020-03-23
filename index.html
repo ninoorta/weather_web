@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="summary-weather">
+                <span class="summary-weather-content">
+                    <canvas id="weather-icon"></canvas>
+                    <center>
+                        <p id="current-temp"></p>
+                        <p id="current-weather-description"></p>
+                    </center>
+                </span>
+
+
+            </div>
+            <div class="detail-weather">
+                <center>
+                    <h1 id="location-header"></h1>
+                </center>
+                <div class="location-detail">
+                    <center>
+                        <table id="table-detail-weather">
+                            <tr>
+                                <th>Feels_like</th>
+                                <th>Temp_min</th>
+                                <th>Temp_max</th>
+                                <th>Pressure</th>
+                                <th>Humidity</th>
+                            </tr>
+                            <tr>
+                                <td id="feels_like"></td>
+                                <td id="temp_min"></td>
+                                <td id="temp_max"></td>
+                                <td id="pressure"></td>
+                                <td id="humidity"></td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+<script src="app.js"></script>
+</html>
